@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy:build": "next build && node scripts/export-deploy.mjs",
     "start": "next start"
   },
   "dependencies": {
