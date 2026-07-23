@@ -1,0 +1,11 @@
+# Serve the site from the deploy/ subfolder (Hostinger clones the whole repo)
+
+RewriteEngine On
+
+# If someone accesses /deploy/... directly, redirect to the clean root URL
+RewriteCond %{THE_REQUEST} \s/deploy/
+RewriteRule ^deploy/(.*)$ /$1 [R=301,L]
+
+# Internally serve every request from deploy/
+RewriteCond %{REQUEST_URI} !^/deploy/
+RewriteRule ^(.*)$ deploy/$1 [L]

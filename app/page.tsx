@@ -133,7 +133,7 @@ export default function Home() {
             <a href="#faq">FAQ</a>
           </nav>
           <a href="#join" className="btn btn-small">
-            Become a Partner
+            Register Now
           </a>
         </div>
       </header>
@@ -166,7 +166,7 @@ export default function Home() {
                   rel="sponsored noopener"
                   target="_blank"
                 >
-                  Register as an Affiliate for Free ⚡
+                  Register as an Affiliate Now
                 </a>
                 <span className="cta-note">
                   Free to join · Tracked on FirstPromoter
@@ -500,7 +500,7 @@ export default function Home() {
                 rel="sponsored noopener"
                 target="_blank"
               >
-                Claim Your Affiliate Spot ⚡
+                Register as an Affiliate Now
               </a>
               <span className="cta-note">
                 Invitation-only · Free registration via our partner link
@@ -583,7 +583,7 @@ export default function Home() {
                 rel="sponsored noopener"
                 target="_blank"
               >
-                Become a Side Hustle Summit Affiliate ⚡
+                Register as an Affiliate Now
               </a>
               <span className="cta-note">
                 Takes ~2 minutes · No purchase required · Up to $1,032 per
