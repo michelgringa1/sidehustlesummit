@@ -41,7 +41,7 @@ Criar um site que:
 2. Divulgue **nosso link de afiliado** para que **novos afiliados se cadastrem** através dele (recrutamento de parceiros, não só venda de ingressos)
 
 ### Pendências (perguntar ao Michel)
-- [ ] **Nosso link de afiliado** (URL exata do FirstPromoter ou link de indicação de parceiro)
+- [x] **Nosso link de afiliado**: https://sidehustlesummitpartner.firstpromoter.com?sref=fo7a0wb (atualizado em 23/07/2026; o anterior sref=4idvofc foi substituído)
 - [ ] Idioma do site (PT-BR, EN, ou ambos?)
 - [ ] Domínio/hosting (qual conta Vercel? qual conta GitHub?) — regra do CLAUDE.md: sempre perguntar qual conta usar
 - [ ] Nome/marca do site

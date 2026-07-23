@@ -1,5 +1,5 @@
 /* ================================================================
-   Side Hustle Summit — Affiliate Program
+   Side Hustle Summit Affiliate Program
    Brand: near-black + neon green, heavy condensed display type
    ================================================================ */
 
@@ -450,22 +450,6 @@ strong {
   margin-bottom: 1.4rem;
 }
 
-.host-crop {
-  overflow: hidden;
-  border-radius: 12px;
-  margin-bottom: 1.4rem;
-  aspect-ratio: 4 / 5;
-}
-
-.host-crop img {
-  width: 200%;
-  max-width: 200%;
-  height: 100%;
-  object-fit: cover;
-  object-position: left top;
-  margin-bottom: 0;
-}
-
 .host-card h3 {
   font-size: 1.7rem;
   color: var(--green-hot);
@@ -513,53 +497,150 @@ strong {
   text-transform: uppercase;
 }
 
-/* ---------------- prizes ---------------- */
-
-.prizes-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.8rem;
+.earnings-banner {
+  margin: 2.4rem 0 1.6rem;
+  padding: 2.2rem 1.6rem;
+  text-align: center;
+  border: 1px solid rgba(124, 255, 79, 0.4);
+  border-top: 3px solid var(--green-hot);
+  border-radius: 16px;
+  background: linear-gradient(
+    180deg,
+    rgba(34, 197, 94, 0.16) 0%,
+    rgba(13, 24, 16, 0.6) 100%
+  );
 }
 
-.prize-card {
-  background: var(--panel);
-  border: 1px solid var(--line);
-  border-radius: 18px;
-  padding: 2.4rem;
-}
-
-.prize-card-featured {
-  border-color: rgba(124, 255, 79, 0.55);
-  box-shadow: 0 0 44px rgba(74, 222, 128, 0.14) inset,
-    0 0 34px rgba(74, 222, 128, 0.1);
-}
-
-.prize-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1.2rem;
-}
-
-.prize-card ul {
-  list-style: none;
-  margin-bottom: 1.2rem;
-}
-
-.prize-card li {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.65rem 0;
-  border-bottom: 1px dashed var(--line);
-}
-
-.prize-card li strong {
-  font-family: var(--font-display);
-  font-size: 1.25rem;
+.earnings-label {
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
   color: var(--green-hot);
 }
 
-.prize-card p {
+.earnings-amount {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 5vw, 3.6rem);
+  color: #fff;
+  line-height: 1.1;
+  margin: 0.3rem 0;
+}
+
+.earnings-note {
   color: var(--ink-dim);
-  font-size: 0.98rem;
+  font-size: 0.95rem;
+  max-width: 34rem;
+  margin-inline: auto;
+}
+
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+}
+
+.offer-card {
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 1.6rem 1rem;
+  text-align: center;
+}
+
+.offer-name {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink-dim);
+}
+
+.offer-price {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: #fff;
+  margin: 0.3rem 0 0.1rem;
+}
+
+.offer-sub {
+  font-size: 0.8rem;
+  color: var(--ink-dim);
+}
+
+/* ---------------- prizes ---------------- */
+
+.contests-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 2.8rem;
+}
+
+.contest + .contest {
+  border-left: 1px solid var(--line);
+  padding-left: 3rem;
+}
+
+.contest-label {
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--green-hot);
+}
+
+.contest h3 {
+  font-size: 1.9rem;
+  margin: 0.3rem 0 0.4rem;
+}
+
+.contest-desc {
+  color: var(--ink-dim);
+  font-size: 0.95rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.prize-rows {
+  list-style: none;
+}
+
+.prize-rows li {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+  padding: 1.05rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.prize-rows li:last-child {
+  border-bottom: none;
+}
+
+.medal {
+  font-size: 1.9rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.place {
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--ink-dim);
+}
+
+.prize-rows strong {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  color: #fff;
+  line-height: 1.15;
 }
 
 /* ---------------- timeline ---------------- */
@@ -748,12 +829,28 @@ strong {
   .hero-grid,
   .split,
   .hosts-grid,
-  .prizes-grid {
+  .contests-panel {
     grid-template-columns: 1fr;
   }
 
   .commission-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contests-panel {
+    padding: 2rem;
+    gap: 2rem;
+  }
+
+  .contest + .contest {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--line);
+    padding-top: 2rem;
+  }
+
+  .offer-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .site-header nav {
