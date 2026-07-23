@@ -256,8 +256,8 @@ strong {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 3rem;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 2rem;
   align-items: center;
   position: relative;
   z-index: 1;
@@ -312,19 +312,29 @@ strong {
 .hero-visual::before {
   content: "";
   position: absolute;
-  inset: 8% 4% 0;
+  inset: 4% 0 -6%;
   background: radial-gradient(
-    circle at 50% 45%,
-    rgba(0, 173, 90, 0.45),
-    transparent 70%
+    ellipse at 50% 60%,
+    rgba(0, 194, 92, 0.55) 0%,
+    rgba(0, 173, 90, 0.28) 45%,
+    transparent 72%
   );
-  filter: blur(10px);
+  filter: blur(14px);
 }
 
 .hero-visual img {
   position: relative;
+  width: 100%;
+  height: auto;
   filter: drop-shadow(0 22px 44px rgba(0, 0, 0, 0.6));
   animation: float-in 0.9s ease both;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 74%,
+    transparent 98%
+  );
+  mask-image: linear-gradient(to bottom, #000 0%, #000 74%, transparent 98%);
 }
 
 @keyframes float-in {
@@ -446,6 +456,8 @@ strong {
 }
 
 .host-card img {
+  display: block;
+  margin-inline: auto;
   border-radius: 12px;
   margin-bottom: 1.4rem;
 }

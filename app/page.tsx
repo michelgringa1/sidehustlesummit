@@ -189,10 +189,10 @@ export default function Home() {
             </div>
             <div className="hero-visual">
               <Image
-                src="/images/russell-brunson-iman-gadzhi-hosts.png"
+                src="/images/russell-brunson-iman-gadzhi-side-hustle-summit.webp"
                 alt="Russell Brunson and Iman Gadzhi, hosts of Side Hustle Summit 2026"
-                width={640}
-                height={523}
+                width={720}
+                height={490}
                 priority
               />
             </div>
